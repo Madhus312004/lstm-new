@@ -4,9 +4,9 @@ import pickle
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-model=load_model(r'C:\Users\madhu\OneDrive\Desktop\Madhu\udemy\Lstm\lstm\next_word_lstm.h5')
+model=load_model(r'C:\Users\madhu\LocalDesktop\Desktop\Madhu\udemy\Lstm\lstm\next_word_lstm.h5')
 
-with open(r'C:\Users\madhu\OneDrive\Desktop\Madhu\udemy\Lstm\lstm\tokenizer.pickle','rb') as handle:
+with open(r'C:\Users\madhu\LocalDesktop\Desktop\Madhu\udemy\Lstm\lstm\tokenizer.pickle','rb') as handle:
     tokenizer=pickle.load(handle)
 
 def predict_next_word(model,tokenizer,text,max_sequence_len):
